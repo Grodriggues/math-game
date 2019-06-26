@@ -1,0 +1,176 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#626666;
+    font-family:roboto;
+    
+}
+
+
+
+
+.text-primary{
+    color:#EF25D4;
+}
+
+.text-light{
+    color:#21D8E5;
+    
+}
+
+.l-heading{
+    font-size:60px;
+}
+
+.wrong-as{
+    color:red;
+}
+
+.right-as{
+    color:#19DF75;
+}
+
+#navbar{
+    background:#272929;
+    color:#21D8E5;
+    padding:0.8rem;
+    margin:auto;
+    text-align:center;
+    margin-bottom:1.5rem;
+    font-size:30px;
+}
+
+#tabuada{
+    background:#272929;
+    height:400px;
+    max-width: 1100px;
+    margin:auto;
+    text-align:center;
+    padding:35px;
+    border-radius:50px;
+    
+   
+}
+
+#tabuada .answer input{
+    margin-top:3rem;
+    height:3rem;
+    width:100%;
+    color:#EF25D4;
+    border:none;
+    font-size:40px;
+    text-align:center;
+    background:#626666;
+    display:block;
+    margin-bottom:3rem;
+    
+}
+
+#tabuada .answer .btn{
+    background:#21D8E5;
+    color:#fff;
+    padding: 1rem 1rem;
+    border:none;
+    cursor:pointer;
+    font-size:30px;
+    width:50%;
+}
+
+#tabuada .answer .btn:hover{
+    background: #0BF0D2;
+}
+
+#tabuada .answer .btn:focus{
+    border:none;
+    outline:none;
+}
+
+#tabuada .answer input:focus{
+    outline: none !important;
+    border:2px solid #21D8E5;
+}
+
+
+#score{
+    
+    color:white;
+    position:absolute;
+    left:75%;
+    top:22%;
+    font-family:30px;
+}
+
+.results{
+    margin: 1rem 0;
+    font-size:30px;
+    line-height:2rem;
+
+}
+
+#player{
+    color:white;
+    position:absolute;
+    left:18%;
+    top:22%;
+    font-family:30px;
+}
+
+
+
+
+.errors{
+    line-height:2.5rem;
+    font-size:25px;
+}
+
+#btn-replay button{
+    display:block;
+    background-color:#EF25D4;
+    color:white;
+    margin:auto;
+    margin-top:2rem;
+    border:none;
+    font-size:30px;
+    padding: 1rem 1rem;
+    cursor:pointer;
+    display:none;
+
+
+}
+
+#btn-replay button:hover{
+    background:#EB1BDD;
+    
+}
+
+button ,input{
+    border-radius:40px;
+}
+
+#tables{
+    position:absolute;
+    left:80%;
+    top:15px;
+    text-decoration: none;
+    background:#EB1BDD;
+    color:#fff;
+    padding:0.4rem;
+    border-radius:40px;
+}
+
+#home{
+    position:absolute;
+    left:1%;
+    top:15px;
+    text-decoration: none;
+    background:#EB1BDD;
+    color:#fff;
+    padding:0.4rem;
+    border-radius:40px;
+}
+
+
