@@ -41,6 +41,8 @@ $button.addEventListener("submit",(event) => {
         bestTime = seconds;
 
         // this if statement bellow will confer if the user hits all the questions and save in data base
+
+        // todo here in the future: verify if the users increase his own score again
         if(isAllTheQuestionsRight()) saveTheScoreInDataBase(nickname,bestTime);
 
     } 
