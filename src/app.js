@@ -16,8 +16,7 @@ app.post("/users", async(req,res) =>{
     const user = new User(req.body);
     try{
         await user.save();
-        res.send({"success":"helloworld"}).status(201);
-        console.log(req.body)
+        res.send().status(201);
     }catch(e){
         res.send({"error":"an error occured"}).status(400);
     }
@@ -25,7 +24,7 @@ app.post("/users", async(req,res) =>{
 });
 
 app.get("/records" , async(req,res) =>{
-    const user = await User.find().sort({bestTime:1}).limit(4)
+    const user = await User.find().sort({bestTime:1}).limit(6) // return the six faster players
     res.send(user);
 }); 
 

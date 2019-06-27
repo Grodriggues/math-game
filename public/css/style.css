@@ -80,9 +80,7 @@ body{
     width:50%;
 }
 
-#tabuada .answer .btn:hover{
-    background: #0BF0D2;
-}
+
 
 #tabuada .answer .btn:focus{
     border:none;
@@ -173,4 +171,10 @@ button ,input{
     border-radius:40px;
 }
 
+#recordes{
+    line-height:3rem;
+}
 
+.lh-2{
+    line-height:3rem;
+}

@@ -1,7 +1,7 @@
 "use strict";
 
 const $tabuada = document.querySelector("#tabuada");
-const $button = document.querySelector("#tabuada .answer .btn");
+const $button = document.querySelector("#tabuada .answer form");
 const $answer = document.querySelector("#answer");
 const $question = document.querySelector("#question");
 const $steps = document.querySelector("#score h2 span");
@@ -27,8 +27,8 @@ $player.innerHTML = currentUserPlaying;
 const interval = setInterval(()=>{x++ ; seconds = (x/100)},10);
 
 
-$button.addEventListener("click",(event) => {
-
+$button.addEventListener("submit",(event) => {
+    event.preventDefault();
     if((isInvalidValue())) return
     verifyAnswer();
     createNewQuestion();
@@ -136,6 +136,7 @@ const renderResults = () =>{
 
     if(isAllTheQuestionsRight()){ // this block of code will run if the users hit all the questions
          $tabuada.innerHTML = `<h2 class="text-light l-heading">Parabéns você acertou todas as questões!</h2>`
+         $tabuada.innerHTML = `<h2 class="text-light l-heading">Seu tempo : ${seconds}</h2>`
          $replay.style.display = "block";
          
          addReplayListener($replay);
