@@ -21,7 +21,8 @@ let seconds = 0;
 let nickname;
 let bestTime;
 
-const currentUserPlaying = localStorage.getItem("currentUserPlaying");
+const currentUserPlaying = localStorage.getItem("currentUserPlaying"); 
+
 $player.innerHTML = currentUserPlaying;
 
 const interval = setInterval(()=>{x++ ; seconds = (x/100)},10);
